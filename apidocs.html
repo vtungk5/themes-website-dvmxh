@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.10/css/perfect-scrollbar.css"
+    />
+    <link href="/assets/css/views.css" rel="stylesheet" />
+    <link href="/assets/css/index.css" rel="stylesheet" />
+  </head>
+
+  <body class="overflow-hidden">
+    <div id="loader"></div>
+    <div id="app" class="overflow-hidden">
+      <div class="main">
+        <header>
+          <div
+            class="ps-lg-4 ps-2 pe-2 ms-1 me-1 justify-content-between pe-lg-4 h-100 d-flex align-items-center"
+          >
+            <button class="toggle_side text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="33"
+                height="33"
+                viewBox="0 0 50 50"
+              >
+                <path
+                  fill="currentColor"
+                  d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"
+                ></path>
+              </svg>
+            </button>
+            <div class="logo_brand fs-5 text-white fw-semibold">TUNGMMO</div>
+            <a href="/login.html" class="btn btn-light border-0 bg-white"
+              >Đăng nhập</a
+            >
+          </div>
+        </header>
+        <div class="content">
+          <div class="row g-0 h-100">
+            <div class="col-3 side_bar shows">
+              <div class="wrapper">
+                <div class="block-nav">
+                  <a class="side_item" href="/">
+                    <i class="ico ico-home"></i>
+                    <span>Trang chủ</span>
+                  </a>
+                  <a class="side_item" href="/profile.html">
+                    <i class="ico ico-user"></i>
+                    <span>Thông tin tài khoản</span>
+                  </a>
+                  <a class="side_item" href="/naptien.html">
+                    <i class="ico ico-star"></i>
+                    <span>Nạp tiền tài khoản</span>
+                  </a>
+                  <a
+                    class="side_item active"
+                    target="_blank"
+                    href="/apidocs.html"
+                  >
+                    <i class="ico ico-paperPlane"></i>
+                    <span>Tài liệu API</span>
+                    <span class="openTab">
+                      <i class="ico ico-opentab"></i>
+                    </span>
+                  </a>
+                </div>
+                <div class="block-nav">
+                  <a class="side_item" href="/history.html">
+                    <i class="ico ico-history"></i>
+                    <span>Xem lịch sử</span>
+                  </a>
+                  <a
+                    class="side_item"
+                    target="_blank"
+                    href="/#/huong-dan-su-dung/"
+                  >
+                    <i class="ico ico-book"></i>
+                    <span>Hướng dẫn sử dụng</span>
+                    <span class="openTab">
+                      <i class="ico ico-opentab"></i>
+                    </span>
+                  </a>
+                </div>
+                <div class="block-nav">
+                  <div class="block-title">Dịch vụ của tôi</div>
+                  <!--Kênh nổi bật-->
+                  <div>
+                    <button class="side_item" toggle-dropdown>
+                      <i class="ico ico-facebook"></i>
+                      <span>Facebook</span>
+                    </button>
+                    <ul class="list-unstyled flex-column side_menu">
+                      <li>
+                        <a class="sidelink" href="#">
+                          <i class="ico ico-paperPlane"></i>
+                          <span>Tài liệu API</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="sidelink" href="#">
+                          <i class="ico ico-paperPlane"></i>
+                          <span>Tài liệu API</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="sidelink" href="#">
+                          <i class="ico ico-paperPlane"></i>
+                          <span>Tài liệu API</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <button class="side_item" toggle-dropdown>
+                      <i class="ico ico-instagram"></i>
+                      <span>Instagram</span>
+                    </button>
+                    <ul class="list-unstyled flex-column side_menu">
+                      <li>
+                        <a class="sidelink" href="#">
+                          <i class="ico ico-paperPlane"></i>
+                          <span>Tài liệu API</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="sidelink" href="#">
+                          <i class="ico ico-paperPlane"></i>
+                          <span>Tài liệu API</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="sidelink" href="#">
+                          <i class="ico ico-paperPlane"></i>
+                          <span>Tài liệu API</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <button class="side_item" toggle-dropdown>
+                      <i class="ico ico-youtube"></i>
+                      <span>Youtube</span>
+                    </button>
+                    <ul class="list-unstyled flex-column side_menu">
+                      <li>
+                        <a class="sidelink" href="#">
+                          <i class="ico ico-paperPlane"></i>
+                          <span>Tài liệu API</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="sidelink" href="#">
+                          <i class="ico ico-paperPlane"></i>
+                          <span>Tài liệu API</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="sidelink" href="#">
+                          <i class="ico ico-paperPlane"></i>
+                          <span>Tài liệu API</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <button class="side_item" toggle-dropdown>
+                      <i class="ico ico-tiktok"></i>
+                      <span>Tiktok</span>
+                    </button>
+                    <ul class="list-unstyled flex-column side_menu">
+                      <li>
+                        <a class="sidelink" href="#">
+                          <i class="ico ico-paperPlane"></i>
+                          <span>Tài liệu API</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="sidelink" href="#">
+                          <i class="ico ico-paperPlane"></i>
+                          <span>Tài liệu API</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="sidelink" href="#">
+                          <i class="ico ico-paperPlane"></i>
+                          <span>Tài liệu API</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <button class="side_item" toggle-dropdown>
+                      <i class="ico ico-shoppe"></i>
+                      <span>Shoppe</span>
+                    </button>
+                    <ul class="list-unstyled flex-column side_menu">
+                      <li>
+                        <a class="sidelink" href="#">
+                          <i class="ico ico-paperPlane"></i>
+                          <span>Tài liệu API</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="sidelink" href="#">
+                          <i class="ico ico-paperPlane"></i>
+                          <span>Tài liệu API</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="sidelink" href="#">
+                          <i class="ico ico-paperPlane"></i>
+                          <span>Tài liệu API</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col h-100 content-main">
+              <div class="p-3 pb-5">
+                <h4 class="card-title mb-3 fw-semibold fs-20">
+                  TÀI LIỆU KẾT NỐI API
+                </h4>
+
+                <div class="alert alert-primary fs-14" role="alert">
+                  <p>
+                    <font color="red">(*)</font> Cơ chế hoạt động: Automxh nuôi
+                    và sử dụng 1 lượng lớn lên đến hàng triệu các tài khoản
+                    Clone, Via để auto buff like, follow, view, cmt cho các đơn
+                    hàng, tạo hiệu ứng cho sự nổi tiếng của bạn, Sau khi oder
+                    đơn sẽ dc xếp hàng chờ buff theo thứ tự trong vòng 24h sẽ
+                    bắt đầu chạy. Những sever hot, giá rẻ có thể bị delay 1, 2
+                    ngày do lượng buff quá đông. Tốc độ buff nhanh, chậm sẽ luôn
+                    update liên tục mỗi ngày cho phù hợp với thuật toán của fb,
+                    tiktok, youtube..
+                  </p>
+                </div>
+
+                <div id="api1">
+                  <div class="form-group mb-3">
+                    <label class="form-label fw-semibold" for="object_id"
+                      >[API] Buff Like Facebook: Auto tăng like cho bài viết,
+                      video, ảnh đại diện, ảnh bìa</label
+                    >
+                    <div class="input-group mt-2">
+                      <button class="btn btn-primary" type="button">
+                        HTTP/GET
+                      </button>
+                      <input
+                        type="text"
+                        class="form-control bg-white"
+                        value="/api/service/create"
+                        disabled
+                      />
+                    </div>
+                    <label class="form-label fw-semibold mt-3">Body:</label>
+                    <div class="mt-1 fs-17" id="body1"></div>
+                    <label class="form-label fw-semibold mt-3">header:</label>
+                    <div class="mt-1 fs-17" id="header1"></div>
+                  </div>
+                </div>
+                <hr class="mt-5 mb-5" />
+                <div id="api2">
+                  <div class="form-group mb-3">
+                    <label class="form-label fw-semibold" for="object_id"
+                      >[API] Buff Like Facebook: Auto tăng like cho bài viết,
+                      video, ảnh đại diện, ảnh bìa</label
+                    >
+                    <div class="input-group mt-2">
+                      <button class="btn btn-primary" type="button">
+                        HTTP/GET
+                      </button>
+                      <input
+                        type="text"
+                        class="form-control bg-white"
+                        value="/api/service/create"
+                        disabled
+                      />
+                    </div>
+                    <label class="form-label fw-semibold mt-3">Body:</label>
+                    <div class="mt-1 fs-17" id="body2"></div>
+                    <label class="form-label fw-semibold mt-3">header:</label>
+                    <div class="mt-1 fs-17" id="header2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.10/js/perfect-scrollbar.jquery.js"></script>    
+    <script src="/assets/js/css.js"></script>
+    <script src="/assets/js/view.js"></script>
+    <script src="/assets/js/index.js"></script>
+    <script>
+      var jsonObj = {};
+      $("#loader").html("<div id='_loading'></div>");
+      $(window).on("load", function () {
+        $("body").removeAttr("style");
+        $("#loader").fadeOut(500);
+      });
+      var updateJSON = function (values, containerId) {
+        var jsonViewer = new JSONViewer();
+        var jsonContainer = jsonViewer.getContainer();
+        $("#" + containerId).append(jsonContainer);
+
+        // Clear the existing JSON object
+        jsonObj = {};
+
+        // Set new values in the JSON object
+        values.forEach(function (value) {
+          for (var key in value) {
+            jsonObj[key] = value[key];
+          }
+        });
+
+        jsonViewer.showJSON(jsonObj);
+      };
+
+      // Example values for body1
+      var values1 = [
+        {
+          provider: "facebook",
+          service_slug: "buff-like",
+          object_id: "4",
+          full_name: null,
+          server_id: "sv1",
+          object_type: "like",
+          quantity: "100",
+        },
+        // Add more values as needed for body1
+      ];
+
+      // Example values for header1
+      var values2 = [
+        {
+          Authorization: "Bearer AGqh60L5MBuIabEp7V6ozjc4yOEgA79Z5umbLlWf",
+        },
+        // Add more values as needed for header1
+      ];
+
+      // Call the updateJSON function to set and update the JSON object for body1
+      updateJSON(values1, "body1");
+      updateJSON(values2, "header1");
+      updateJSON(values1, "body2");
+      updateJSON(values2, "header2");
+    </script>
+
+    <script>
+      $(".side_bar>.wrapper").perfectScrollbar();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+#loader {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 5000;
+  }
+
+  #_loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #007dff;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @media(max-width:1047px) {
+    #app>.main {
+        width: 100% !important;
+    }
+
+    .logo_brand {
+        margin-left: 0 !important;
+    }
+
+    #app>.main>.content .side_bar {
+        border-right: 1px solid #d0d0d0 !important;
+        position: fixed !important;
+        height: 100% !important;
+        top: 0 !important;
+        left: -17rem !important;
+        width: 17rem !important;
+        background: #fff !important;
+        z-index: 1000 !important;
+    }
+
+    #app>.main>.content .side_bar.show {
+        left: 0 !important;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

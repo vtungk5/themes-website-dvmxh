@@ -1,0 +1,57 @@
+table .form-control {
+    border: 1px solid #ced4da!important;
+}
+
+table{
+    caption-side: bottom;
+    border-collapse: collapse;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+
+ul.pagination {
+    justify-content: end;
+}
+
+.table-bordered> :not(caption)>* {
+    border-width: 1px 0;
+}
+
+table * {
+    border: none !important;
+}
+
+.table th {
+    font-weight: 500 !important;
+    background-color: var(--color-main-an) !important;
+    color: var(--color-main);
+}
+
+html.dark table {
+    color: #fff;
+}
+
+.table tbody {
+    background-color: #ffffff0a!important;
+}
+
+.table th {
+    background-color: #037eff!important;
+    color: #fff!important;
+}
+
+
+table.table-bordered.dataTable th, table.table-bordered.dataTable td {
+    border: 1px solid #eee!important;
+}
